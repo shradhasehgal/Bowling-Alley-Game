@@ -2,22 +2,437 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2f22fe7-8fcc-4c9e-8740-0e3dd8346c3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Views.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ControlDeskViewControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ControlDeskViewLane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ControlDeskViewParty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/A3 5.mdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/graphs/all_bymodularity.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/graphs/all_byprojectmodule.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/graphs/all_nm.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/graphs/all_nm_inheritance.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/all_bymodularity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/all_bymodularity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/all_byprojectmodule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/all_byprojectmodule.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/all_nm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/all_nm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/all_nm_inheritance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/all_nm_inheritance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/graph_htmls/graphlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/Xdonut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/circlepack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/dependency.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/donut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/donutcharts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/donutchartssimple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/lbd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/lbd/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/lbd/graphs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/lbd/metricdescriptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/lbd/notifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/lbd/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/lbd/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/metricchartmethod.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/metricchartpackage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/metricchartx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/modeldata/defaultclassmetrics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/modeldata/overview_metric_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/modeldata/packagedependency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/modeldata/summary_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/modeldata/sunburst_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/modeldata/table_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/reportforprint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/sunburst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/htmlx/treemap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/html_report_a3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/css/helptip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/css/light-bootstrap-dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/css/pe-icon-7-stroke.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/fonts/Pe-icon-7-stroke.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/img/codemr-icon-black-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/img/codemr-white-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/img/default-avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/img/loading-bubbles.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/img/mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/img/new_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/img/sidebar-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/js/bootstrap-checkbox-radio-switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/js/bootstrap-notify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/js/bootstrap-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/js/chartist.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/js/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/js/light-bootstrap-dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_chartist.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_checkbox-radio-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_footers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_misc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_navbars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_sidebar-and-main-panel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_chartist.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_morphing-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_navbars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_social-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_transparency.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/lbd/mixins/_vendor-prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/assets/sass/light-bootstrap-dashboard.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/css/barchartstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/css/graph.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/css/helptip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/css/legend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/css/treemap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/css/vis.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/css/animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/css/codemr-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/css/codemr-embedded.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/css/codemr-ie7-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/css/codemr-ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/css/codemr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/font/codemr.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/font/codemr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/font/codemr.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/font/codemr.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/font-codemr/font/codemr.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-300.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/fonts/robotofonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/img/eqGraphlegend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/img/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/circlepack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/d3.tip.v0.6.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/dependency_wheel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/donut3d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/eq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/metric_definitions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/metricchart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/sunburst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/vis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/vis_eq_cluster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/html/js/vis_eq_graph_base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/Xdonut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/circlepack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/dependency.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/donut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/donutcharts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/donutchartssimple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/lbd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/lbd/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/lbd/graphs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/lbd/metricdescriptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/lbd/notifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/lbd/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/lbd/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/metricchartmethod.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/metricchartpackage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/metricchartx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/modeldata/defaultclassmetrics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/modeldata/overview_metric_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/modeldata/packagedependency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/modeldata/summary_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/modeldata/sunburst_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/modeldata/table_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/reportforprint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/sunburst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/htmlx/treemap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/main_report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 5/html/workingsets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/A3 please.mdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/graphs/all_bymodularity.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/graphs/all_bypackage.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/graphs/all_byprojectmodule.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/graphs/all_nm.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/graphs/all_nm_inheritance.cmr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_bymodularity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_bymodularity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_bypackage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_bypackage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_byprojectmodule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_byprojectmodule.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_nm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_nm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_nm_inheritance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/all_nm_inheritance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/graph_htmls/graphlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/Xdonut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/circlepack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/dependency.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/donut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/donutcharts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/donutchartssimple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/lbd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/lbd/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/lbd/graphs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/lbd/metricdescriptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/lbd/notifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/lbd/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/lbd/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/metricchartmethod.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/metricchartpackage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/metricchartx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/modeldata/defaultclassmetrics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/modeldata/overview_metric_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/modeldata/packagedependency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/modeldata/summary_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/modeldata/sunburst_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/modeldata/table_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/reportforprint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/sunburst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/htmlx/treemap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/html_report_a3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/css/helptip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/css/light-bootstrap-dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/css/pe-icon-7-stroke.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/fonts/Pe-icon-7-stroke.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/img/codemr-icon-black-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/img/codemr-white-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/img/default-avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/img/loading-bubbles.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/img/mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/img/new_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/img/sidebar-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/js/bootstrap-checkbox-radio-switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/js/bootstrap-notify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/js/bootstrap-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/js/chartist.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/js/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/js/light-bootstrap-dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_chartist.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_checkbox-radio-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_footers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_misc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_navbars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_sidebar-and-main-panel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_chartist.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_morphing-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_navbars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_social-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_transparency.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/lbd/mixins/_vendor-prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/assets/sass/light-bootstrap-dashboard.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/css/barchartstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/css/graph.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/css/helptip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/css/legend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/css/treemap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/css/vis.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/css/animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/css/codemr-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/css/codemr-embedded.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/css/codemr-ie7-codes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/css/codemr-ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/css/codemr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/font/codemr.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/font/codemr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/font/codemr.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/font/codemr.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/font-codemr/font/codemr.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-300.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/roboto-v15-cyrillic-ext_vietnamese_latin_cyrillic_latin-ext_greek-ext_greek-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/fonts/robotofonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/img/eqGraphlegend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/img/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/circlepack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/d3.tip.v0.6.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/dependency_wheel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/donut3d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/eq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/metric_definitions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/metricchart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/sunburst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/vis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/vis_eq_cluster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/html/js/vis_eq_graph_base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/Xdonut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/circlepack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/dependency.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/donut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/donutcharts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/donutchartssimple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/lbd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/lbd/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/lbd/graphs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/lbd/metricdescriptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/lbd/notifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/lbd/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/lbd/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/metricchartmethod.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/metricchartpackage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/metricchartx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/modeldata/defaultclassmetrics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/modeldata/overview_metric_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/modeldata/packagedependency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/modeldata/summary_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/modeldata/sunburst_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/modeldata/table_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/reportforprint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/sunburst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/htmlx/treemap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/main_report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codemr/A3 please/html/workingsets.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/AddPartyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/AddPartyView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ControlDeskView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ControlDeskView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/ControlDeskView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ControlDeskView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/EndGamePrompt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/EndGamePrompt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Lane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/LaneView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/LaneView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/NewPatronView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/NewPatronView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/PinSetterView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/PinSetterView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Views.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Views.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/drive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/drive.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddPartyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddPartyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ControlDeskView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDeskView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EndGamePrompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EndGamePrompt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EndGameReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EndGameReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LaneStatusView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneStatusView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LaneView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NewPatronView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewPatronView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PinSetterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PinSetterView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +453,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -83,34 +497,38 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="215" width="800" height="684" key="#Inspections/67.27.1853.1053@67.27.1853.1053" timestamp="1586105885408" />
+    <state x="801" y="266" width="374" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1586289111421">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="266" width="374" height="582" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1586289111421" />
     <state x="710" y="436" width="488" height="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585134534206">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="710" y="436" width="488" height="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.1053@67.27.1853.1053" timestamp="1585134534206" />
-    <state width="1807" height="275" key="GridCell.Tab.0.bottom" timestamp="1586279486058">
+    <state width="1807" height="275" key="GridCell.Tab.0.bottom" timestamp="1586295009649">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="275" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586279486058" />
-    <state width="1807" height="275" key="GridCell.Tab.0.center" timestamp="1586279486056">
+    <state width="1807" height="275" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586295009649" />
+    <state width="1807" height="275" key="GridCell.Tab.0.center" timestamp="1586295009647">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="275" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586279486056" />
-    <state width="1807" height="275" key="GridCell.Tab.0.left" timestamp="1586279486055">
+    <state width="1807" height="275" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586295009647" />
+    <state width="1807" height="275" key="GridCell.Tab.0.left" timestamp="1586295009645">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="275" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586279486055" />
-    <state width="1807" height="275" key="GridCell.Tab.0.right" timestamp="1586279486057">
+    <state width="1807" height="275" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586295009645" />
+    <state width="1807" height="275" key="GridCell.Tab.0.right" timestamp="1586295009648">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="275" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586279486057" />
+    <state width="1807" height="275" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586295009648" />
     <state x="482" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1585758790271">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="188" width="1022" height="737" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585758790271" />
-    <state x="773" y="422" width="430" height="269" key="com.codemr.intellij.extractors.ExtractModelDialog" timestamp="1586280631612">
+    <state x="773" y="422" width="430" height="294" key="com.codemr.intellij.extractors.ExtractModelDialog" timestamp="1586294936182">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="773" y="422" width="430" height="269" key="com.codemr.intellij.extractors.ExtractModelDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586280631612" />
+    <state x="773" y="422" width="430" height="294" key="com.codemr.intellij.extractors.ExtractModelDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586294936182" />
     <state x="181" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586236509905">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -123,9 +541,13 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="302" y="154" width="1372" height="805" key="new project wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1586236974143" />
-    <state x="738" y="172" width="500" height="769" key="refactoring.ChangeSignatureDialog" timestamp="1586107357337">
+    <state x="738" y="172" width="500" height="769" key="refactoring.ChangeSignatureDialog" timestamp="1586291898713">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="738" y="172" width="500" height="769" key="refactoring.ChangeSignatureDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586107357337" />
+    <state x="738" y="172" width="500" height="769" key="refactoring.ChangeSignatureDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586291898713" />
+    <state x="656" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1586291309491">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="259" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586291309491" />
   </component>
 </project>

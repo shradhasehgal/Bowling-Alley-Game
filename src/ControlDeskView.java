@@ -15,20 +15,15 @@
 
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Vector;
 import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.event.*;
 
-import java.util.*;
-
-public class ControlDeskView implements ActionListener, ControlDeskObserver {
+public class ControlDeskView implements ActionListener {
 
 	private JFrame win;
-	private JList partyList;
-	
+
 	/** The maximum  number of members in a party */
 	private int maxMembers;
-	
 	private ControlDesk controlDesk;
 
 	/**
@@ -40,64 +35,27 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 
 		this.controlDesk = controlDesk;
 		this.maxMembers = maxMembers;
-		int numLanes = controlDesk.getNumLanes();
 
-		win = Views.InitializeWindow("Control Desk");
+		win = new JFrame("Control Desk");
+		win.getContentPane().setLayout(new BorderLayout());
+		((JPanel) win.getContentPane()).setOpaque(false);
 
 		JPanel colPanel = new JPanel();
 		colPanel.setLayout(new BorderLayout());
 
-		// Controls Panel
-		JPanel controlsPanel = new JPanel();
-		controlsPanel.setLayout(new GridLayout(3, 1));
-		controlsPanel.setBorder(new TitledBorder("Controls"));
+		ControlDeskViewParty Party = new ControlDeskViewParty();
+		controlDesk.subscribe(Party);
 
-		String[] ButtonNames = {"Add Party", "Finished"};
-		for (int i=0; i < ButtonNames.length; i++)
-			Views.Button(ButtonNames[i], controlsPanel).addActionListener(this);
-		// Lane Status Panel
-		JPanel laneStatusPanel = new JPanel();
-		laneStatusPanel.setLayout(new GridLayout(numLanes, 1));
-		laneStatusPanel.setBorder(new TitledBorder("Lane Status"));
-
-		var lanes=controlDesk.getLanes();
-		var it = lanes.iterator();
-		int laneCount=0;
-		while (it.hasNext()) {
-			Lane curLane = (Lane) it.next();
-			LaneStatusView laneStat = new LaneStatusView(curLane,(laneCount+1));
-			curLane.subscribe(laneStat);
-			((Pinsetter)curLane.getPinsetter()).subscribe(laneStat);
-			JPanel lanePanel = laneStat.showLane();
-			lanePanel.setBorder(new TitledBorder("Lane" + ++laneCount ));
-			laneStatusPanel.add(lanePanel);
-		}
-
-		// Party Queue Panel
-		JPanel partyPanel = new JPanel();
-		partyPanel.setLayout(new FlowLayout());
-		partyPanel.setBorder(new TitledBorder("Party Queue"));
-
-		var empty = new Vector();
-		empty.add("(Empty)");
-
-		partyList = new JList(empty);
-		partyList.setFixedCellWidth(120);
-		partyList.setVisibleRowCount(10);
-		JScrollPane partyPane = new JScrollPane(partyList);
-		partyPane.setVerticalScrollBarPolicy(
-			JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-		partyPanel.add(partyPane);
-
-		// Clean up main panel
-		colPanel.add(controlsPanel, "East");
-		colPanel.add(laneStatusPanel, "Center");
-		colPanel.add(partyPanel, "West");
-
+		colPanel.add(new ControlDeskViewControl(this).getControlPanel(), "East");
+		colPanel.add(new ControlDeskViewLane(controlDesk).getLaneStatusPanel(), "Center");
+		colPanel.add(Party.getPartyPanel(), "West");
 		win.getContentPane().add("Center", colPanel);
-
-		win = Views.CenterWindow(win);
-
+		Dimension screenSize = (Toolkit.getDefaultToolkit()).getScreenSize();
+		win.pack();
+		win.setLocation(
+				((screenSize.width) / 2) - ((win.getSize().width) / 2),
+				((screenSize.height) / 2) - ((win.getSize().height) / 2));
+		win.setVisible(true);
 		/* Close program when this window closes */
 		win.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
@@ -118,7 +76,7 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 			AddPartyView addPartyWin = new AddPartyView(this, maxMembers);
 		}
 		else if (e.getActionCommand().equals("Finished")) {
-			win.hide();
+			win.setVisible(false);
 			System.exit(0);
 		}
 	}
@@ -134,14 +92,4 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 		controlDesk.addPartyQueue(addPartyView.getParty());
 	}
 
-	/**
-	 * Receive a broadcast from a ControlDesk
-	 *
-	 * @param ce	the ControlDeskEvent that triggered the handler
-	 *
-	 */
-
-	public void receiveControlDeskEvent(ControlDeskEvent ce) {
-		partyList.setListData(((Vector) ce.getPartyQueue()));
-	}
 }

@@ -110,7 +110,7 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 		colPanel.add(buttonPanel);
 
 		win.getContentPane().add("Center", colPanel);
-		win = Views.CenterWindow(win);
+		Views.CenterWindow(win);
 	}
 
 	public void actionPerformed(ActionEvent e) {

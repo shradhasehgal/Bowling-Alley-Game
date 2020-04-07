@@ -28,7 +28,6 @@ import java.text.*;
 public class NewPatronView implements ActionListener {
 
 	private JFrame win;
-	private JLabel nickLabel, fullLabel, emailLabel;
 	private JTextField nickField, fullField, emailField;
 	private String nick, full, email;
 	private boolean done;
@@ -39,7 +38,9 @@ public class NewPatronView implements ActionListener {
 		addParty=v;	
 		done = false;
 
-		win = Views.InitializeWindow("Add Patron");
+		win = new JFrame("Add Patron");
+		win.getContentPane().setLayout(new BorderLayout());
+		((JPanel) win.getContentPane()).setOpaque(false);
 
 		JPanel colPanel = new JPanel();
 		colPanel.setLayout(new BorderLayout());
@@ -49,30 +50,10 @@ public class NewPatronView implements ActionListener {
 		patronPanel.setLayout(new GridLayout(3, 1));
 		patronPanel.setBorder(new TitledBorder("Your Info"));
 
-		JPanel nickPanel = new JPanel();
-		nickPanel.setLayout(new FlowLayout());
-		nickLabel = new JLabel("Nick Name");
-		nickField = new JTextField("", 15);
-		nickPanel.add(nickLabel);
-		nickPanel.add(nickField);
+		nickField = Views.MiniPanel("Nick Name", patronPanel);
+		fullField = Views.MiniPanel("Full Name", patronPanel);
+		emailField = Views.MiniPanel("E-Mail", patronPanel);
 
-		JPanel fullPanel = new JPanel();
-		fullPanel.setLayout(new FlowLayout());
-		fullLabel = new JLabel("Full Name");
-		fullField = new JTextField("", 15);
-		fullPanel.add(fullLabel);
-		fullPanel.add(fullField);
-
-		JPanel emailPanel = new JPanel();
-		emailPanel.setLayout(new FlowLayout());
-		emailLabel = new JLabel("E-Mail");
-		emailField = new JTextField("", 15);
-		emailPanel.add(emailLabel);
-		emailPanel.add(emailField);
-
-		patronPanel.add(nickPanel);
-		patronPanel.add(fullPanel);
-		patronPanel.add(emailPanel);
 
 		// Button Panel
 		JPanel buttonPanel = new JPanel();
@@ -88,14 +69,19 @@ public class NewPatronView implements ActionListener {
 
 		win.getContentPane().add("Center", colPanel);
 
-		win = Views.CenterWindow(win);
+		win.pack();
+		Dimension screenSize = (Toolkit.getDefaultToolkit()).getScreenSize();
+		win.setLocation(
+				((screenSize.width) / 2) - ((win.getSize().width) / 2),
+				((screenSize.height) / 2) - ((win.getSize().height) / 2));
+		win.setVisible(true);
 
 	}
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Abort")) {
 			done = true;
-			win.hide();
+			win.setVisible(false);
 		}
 
 		if (e.getActionCommand().equals("Add Patron")) {
@@ -104,7 +90,7 @@ public class NewPatronView implements ActionListener {
 			email = emailField.getText();
 			done = true;
 			addParty.updateNewPatron( this );
-			win.hide();
+			win.setVisible(false);
 		}
 
 	}

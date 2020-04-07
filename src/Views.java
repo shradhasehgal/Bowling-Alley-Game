@@ -22,15 +22,24 @@ public class Views {
         return win;
     }
 
-    public static JFrame CenterWindow(JFrame win){
-
+    public static void CenterWindow(JFrame win){
         win.pack();
         Dimension screenSize = (Toolkit.getDefaultToolkit()).getScreenSize();
         win.setLocation(
                 ((screenSize.width) / 2) - ((win.getSize().width) / 2),
                 ((screenSize.height) / 2) - ((win.getSize().height) / 2));
         win.setVisible(true);
-        return win;
+    }
+
+    public static JTextField MiniPanel(String PanelName, JPanel MasterPanel){
+        JPanel MiniPanel = new JPanel();
+        MiniPanel.setLayout(new FlowLayout());
+        JLabel Label = new JLabel(PanelName);
+        JTextField Field = new JTextField("", 15);
+        MiniPanel.add(Label);
+        MiniPanel.add(Field);
+        MasterPanel.add(MiniPanel);
+        return Field;
     }
 
 }

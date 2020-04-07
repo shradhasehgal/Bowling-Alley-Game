@@ -46,11 +46,11 @@ public class LaneView implements LaneObserver, ActionListener {
 	}
 
 	public void show() {
-		frame.show();
+		frame.setVisible(true);
 	}
 
 	public void hide() {
-		frame.hide();
+		frame.setVisible(false);
 	}
 
 	private JPanel makeFrame(Party party) {
@@ -181,8 +181,8 @@ public class LaneView implements LaneObserver, ActionListener {
 							ballLabel[k][i].setText("F");
 						} else
 							ballLabel[k][i].setText(
-								(new Integer(((int[]) ((HashMap) le.getScore())
-									.get(bowlers.get(k)))[i]))
+								(Integer.valueOf(((int[]) ((HashMap) le.getScore())
+										.get(bowlers.get(k)))[i]))
 									.toString());
 				}
 			}
