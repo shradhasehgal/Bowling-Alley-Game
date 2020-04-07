@@ -46,7 +46,6 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 	private JFrame win;
 	private JList partyList, allBowlers;
 	private Vector party, bowlerdb;
-
 	private ControlDeskView controlDesk;
 
 	private String selectedNick, selectedMember;
@@ -103,10 +102,9 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 		JPanel buttonPanel = new JPanel();
 		buttonPanel.setLayout(new GridLayout(4, 1));
 
-		buttonPanel.add(new ControlDeskViewButton("Add to Party",this).getPanel());
-		buttonPanel.add(new ControlDeskViewButton("Remove Member",this).getPanel());
-		buttonPanel.add(new ControlDeskViewButton("New Patron",this).getPanel());
-		buttonPanel.add(new ControlDeskViewButton("Finished",this).getPanel());
+		String[] ButtonNames = {"Add to Party", "Remove Member", "New Patron", "Finished"};
+		for (int i=0; i < ButtonNames.length; i++)
+			new Button(ButtonNames[i], buttonPanel, this);
 
 		// Clean up main panel
 		colPanel.add(partyPanel);

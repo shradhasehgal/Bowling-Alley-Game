@@ -27,17 +27,11 @@ import java.text.*;
 
 public class NewPatronView implements ActionListener {
 
-	private int maxSize;
-
 	private JFrame win;
-	private JButton abort, finished;
 	private JLabel nickLabel, fullLabel, emailLabel;
 	private JTextField nickField, fullField, emailField;
 	private String nick, full, email;
-
 	private boolean done;
-
-	private String selectedNick, selectedMember;
 	private AddPartyView addParty;
 
 	public NewPatronView(AddPartyView v) {
@@ -88,21 +82,8 @@ public class NewPatronView implements ActionListener {
 
 		Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-		finished = new JButton("Add Patron");
-		JPanel finishedPanel = new JPanel();
-		finishedPanel.setLayout(new FlowLayout());
-		finished.addActionListener(this);
-		finishedPanel.add(finished);
-
-		abort = new JButton("Abort");
-		JPanel abortPanel = new JPanel();
-		abortPanel.setLayout(new FlowLayout());
-		abort.addActionListener(this);
-		abortPanel.add(abort);
-
-		buttonPanel.add(abortPanel);
-		buttonPanel.add(finishedPanel);
-
+		new Button("Add Patron",buttonPanel, this);
+		new Button("Abort", buttonPanel, this);
 		// Clean up main panel
 		colPanel.add(patronPanel, "Center");
 		colPanel.add(buttonPanel, "East");
@@ -121,12 +102,12 @@ public class NewPatronView implements ActionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource().equals(abort)) {
+		if (e.getActionCommand().equals("Abort")) {
 			done = true;
 			win.hide();
 		}
 
-		if (e.getSource().equals(finished)) {
+		if (e.getActionCommand().equals("Add Patron")) {
 			nick = nickField.getText();
 			full = fullField.getText();
 			email = emailField.getText();

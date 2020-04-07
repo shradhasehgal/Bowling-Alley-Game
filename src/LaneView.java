@@ -24,7 +24,6 @@ public class LaneView implements LaneObserver, ActionListener {
 	JPanel[][] ballGrid;
 	JPanel[] pins;
 
-	JButton maintenance;
 	Lane lane;
 
 	public LaneView(Lane lane, int laneNum) {
@@ -144,14 +143,7 @@ public class LaneView implements LaneObserver, ActionListener {
 
 				Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-				maintenance = new JButton("Maintenance Call");
-				JPanel maintenancePanel = new JPanel();
-				maintenancePanel.setLayout(new FlowLayout());
-				maintenance.addActionListener(this);
-				maintenancePanel.add(maintenance);
-
-				buttonPanel.add(maintenancePanel);
-
+				new Button("Maintenance Call",buttonPanel,this);
 				cpanel.add(buttonPanel, "South");
 
 				frame.pack();
@@ -199,7 +191,7 @@ public class LaneView implements LaneObserver, ActionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource().equals(maintenance)) {
+		if (e.getActionCommand().equals("Maintenance Call")) {
 			lane.pauseGame();
 		}
 	}

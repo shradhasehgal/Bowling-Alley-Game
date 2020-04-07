@@ -18,7 +18,6 @@ import java.text.*;
 public class EndGameReport implements ActionListener, ListSelectionListener {
 
 	private JFrame win;
-	private JButton printButton, finished;
 	private JList memberList;
 	private Vector myVector;
 	private Vector retVal;
@@ -65,20 +64,8 @@ public class EndGameReport implements ActionListener, ListSelectionListener {
 
 		Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-		printButton = new JButton("Print Report");
-		JPanel printButtonPanel = new JPanel();
-		printButtonPanel.setLayout(new FlowLayout());
-		printButton.addActionListener(this);
-		printButtonPanel.add(printButton);
-
-		finished = new JButton("Finished");
-		JPanel finishedPanel = new JPanel();
-		finishedPanel.setLayout(new FlowLayout());
-		finished.addActionListener(this);
-		finishedPanel.add(finished);
-
-		buttonPanel.add(printButton);
-		buttonPanel.add(finished);
+		new Button("Print Report", buttonPanel,this);
+		new Button("Finished", buttonPanel,this);
 
 		// Clean up main panel
 		colPanel.add(partyPanel);
@@ -98,11 +85,11 @@ public class EndGameReport implements ActionListener, ListSelectionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource().equals(printButton)) {		
+		if (e.getActionCommand().equals("Print Button")){
 			//Add selected to the vector.
 			retVal.add(selectedMember);
 		}
-		if (e.getSource().equals(finished)) {		
+		else if (e.getActionCommand().equals("Finished")){
 			win.hide();
 			result = 1;
 		}

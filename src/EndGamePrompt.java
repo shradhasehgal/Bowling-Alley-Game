@@ -18,8 +18,6 @@ import java.text.*;
 public class EndGamePrompt implements ActionListener {
 
 	private JFrame win;
-	private JButton yesButton, noButton;
-
 	private int result;
 
 	private String selectedNick, selectedMember;
@@ -50,20 +48,8 @@ public class EndGamePrompt implements ActionListener {
 
 		Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-		yesButton = new JButton("Yes");
-		JPanel yesButtonPanel = new JPanel();
-		yesButtonPanel.setLayout(new FlowLayout());
-		yesButton.addActionListener(this);
-		yesButtonPanel.add(yesButton);
-
-		noButton = new JButton("No");
-		JPanel noButtonPanel = new JPanel();
-		noButtonPanel.setLayout(new FlowLayout());
-		noButton.addActionListener(this);
-		noButtonPanel.add(noButton);
-
-		buttonPanel.add(yesButton);
-		buttonPanel.add(noButton);
+		new Button("Yes",buttonPanel, this);
+		new Button("No",buttonPanel, this);
 
 		// Clean up main panel
 		colPanel.add(labelPanel);
@@ -83,10 +69,10 @@ public class EndGamePrompt implements ActionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource().equals(yesButton)) {		
+		if (e.getActionCommand().equals("Yes")) {
 			result=1;
 		}
-		if (e.getSource().equals(noButton)) {		
+		if (e.getActionCommand().equals("No")) {
 			result=2;
 		}
 
