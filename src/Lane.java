@@ -209,8 +209,8 @@ public class Lane extends Thread implements PinsetterObserver {
 						finalScores[bowlIndex][gameNumber] = cumulScores[bowlIndex][9];
 						try{
 						Date date = new Date();
-						String dateString = "" + date.getHours() + ":" + date.getMinutes() + " " + date.getMonth() + "/" + date.getDay() + "/" + (date.getYear() + 1900);
-						ScoreHistoryFile.addScore(currentThrower.getNick(), dateString, new Integer(cumulScores[bowlIndex][9]).toString());
+						String dateString = String.format("%d:%d %d/%d/%d", date.getHours(), date.getMinutes(), date.getMonth(), date.getDay(), date.getYear() + 1900);
+						ScoreHistoryFile.addScore(currentThrower.getNick(), dateString, Integer.toString(cumulScores[bowlIndex][9]));
 						} catch (Exception e) {System.err.println("Exception in addScore. "+ e );} 
 					}
 
@@ -227,13 +227,12 @@ public class Lane extends Thread implements PinsetterObserver {
 						gameNumber++;
 					}
 				}
-			} else if (partyAssigned && gameFinished) {
+			} else if (partyAssigned) {
 				EndGamePrompt egp = new EndGamePrompt( ((Bowler) party.getMembers().get(0)).getNickName() + "'s Party" );
 				int result = egp.getResult();
 				egp.distroy();
-				egp = null;
-				
-				
+
+
 				System.out.println("result was: " + result);
 				
 				// TODO: send record of scores to control desk
@@ -248,8 +247,7 @@ public class Lane extends Thread implements PinsetterObserver {
 					partyAssigned = false;
 					Iterator scoreIt = party.getMembers().iterator();
 					party = null;
-					partyAssigned = false;
-					
+
 					publish(lanePublish());
 					
 					int myIndex = 0;
@@ -302,25 +300,15 @@ public class Lane extends Thread implements PinsetterObserver {
 				
 					if ((pe.totalPinsDown() != 10) && (pe.getThrowNumber() == 2 && tenthFrameStrike == false)) {
 						canThrowAgain = false;
-						//publish( lanePublish() );
 					}
 				
-					if (pe.getThrowNumber() == 3) {
+					else if (pe.getThrowNumber() == 3) {
 						canThrowAgain = false;
-						//publish( lanePublish() );
 					}
-				} else { // its not the 10th frame
-			
-					if (pe.pinsDownOnThisThrow() == 10) {		// threw a strike
-						canThrowAgain = false;
-						//publish( lanePublish() );
-					} else if (pe.getThrowNumber() == 2) {
-						canThrowAgain = false;
-						//publish( lanePublish() );
-					} else if (pe.getThrowNumber() == 3)  
-						System.out.println("I'm here...");
 				}
-			} else {								//  this is not a real throw, probably a reset
+				else if (pe.pinsDownOnThisThrow() == 10 || pe.getThrowNumber() == 2) {		// threw a strike
+						canThrowAgain = false;
+				}
 			}
 	}
 	
@@ -352,9 +340,9 @@ public class Lane extends Thread implements PinsetterObserver {
 			}
 			scores.put( bowlIt.next(), toPut );
 		}
-		
-		
-		
+
+
+
 		gameFinished = false;
 		frameNumber = 0;
 	}
@@ -440,9 +428,6 @@ public class Lane extends Thread implements PinsetterObserver {
 				//Also, we're not on the current ball.
 				//Add the next ball to the ith one in cumul.
 				cumulScores[bowlIndex][(i/2)] += curScore[i+1] + curScore[i];
-				if (i > 1) {
-					//cumulScores[bowlIndex][i/2] += cumulScores[bowlIndex][i/2 -1];
-				}
 			} else if( i < current && i%2 == 0 && curScore[i] == 10  && i < 18){
 				strikeballs = 0;
 				//This ball is the first ball, and was a strike.
@@ -538,14 +523,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	public boolean isPartyAssigned() {
 		return partyAssigned;
 	}
-	
-	/** isGameFinished
-	 * 
-	 * @return true if the game is done, false otherwise
-	 */
-	public boolean isGameFinished() {
-		return gameFinished;
-	}
+
 
 	/** subscribe
 	 * 
