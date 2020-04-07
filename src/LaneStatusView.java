@@ -54,9 +54,12 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 
 		Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-		viewLane = new Button("View Lane", buttonPanel, this).getButton();
-		viewPinSetter = new Button("Pinsetter", buttonPanel, this).getButton();
-		maintenance = new Button("     ", buttonPanel, this).getButton();
+		viewLane = Views.Button("View Lane", buttonPanel);
+		viewLane.addActionListener(this);
+		viewPinSetter = Views.Button("Pinsetter", buttonPanel);
+		viewPinSetter.addActionListener(this);
+		maintenance = Views.Button("     ", buttonPanel);
+		maintenance.addActionListener(this);
 		maintenance.setBackground( Color.GREEN );
 		viewLane.setEnabled( false );
 		viewPinSetter.setEnabled( false );

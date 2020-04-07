@@ -39,9 +39,7 @@ public class NewPatronView implements ActionListener {
 		addParty=v;	
 		done = false;
 
-		win = new JFrame("Add Patron");
-		win.getContentPane().setLayout(new BorderLayout());
-		((JPanel) win.getContentPane()).setOpaque(false);
+		win = Views.InitializeWindow("Add Patron");
 
 		JPanel colPanel = new JPanel();
 		colPanel.setLayout(new BorderLayout());
@@ -82,22 +80,15 @@ public class NewPatronView implements ActionListener {
 
 		Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-		new Button("Add Patron",buttonPanel, this);
-		new Button("Abort", buttonPanel, this);
+		Views.Button("Add Patron",buttonPanel).addActionListener(this);
+		Views.Button("Abort", buttonPanel).addActionListener(this);
 		// Clean up main panel
 		colPanel.add(patronPanel, "Center");
 		colPanel.add(buttonPanel, "East");
 
 		win.getContentPane().add("Center", colPanel);
 
-		win.pack();
-
-		// Center Window on Screen
-		Dimension screenSize = (Toolkit.getDefaultToolkit()).getScreenSize();
-		win.setLocation(
-			((screenSize.width) / 2) - ((win.getSize().width) / 2),
-			((screenSize.height) / 2) - ((win.getSize().height) / 2));
-		win.show();
+		win = Views.CenterWindow(win);
 
 	}
 

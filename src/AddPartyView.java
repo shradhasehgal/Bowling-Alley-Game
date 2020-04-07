@@ -55,9 +55,7 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 		this.controlDesk = controlDesk;
 		maxSize = max;
 
-		win = new JFrame("Add Party");
-		win.getContentPane().setLayout(new BorderLayout());
-		((JPanel) win.getContentPane()).setOpaque(false);
+		win = Views.InitializeWindow("Add Party");
 
 		JPanel colPanel = new JPanel();
 		colPanel.setLayout(new GridLayout(1, 3));
@@ -104,7 +102,7 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 
 		String[] ButtonNames = {"Add to Party", "Remove Member", "New Patron", "Finished"};
 		for (int i=0; i < ButtonNames.length; i++)
-			new Button(ButtonNames[i], buttonPanel, this);
+			Views.Button(ButtonNames[i], buttonPanel).addActionListener(this);
 
 		// Clean up main panel
 		colPanel.add(partyPanel);
@@ -112,16 +110,7 @@ public class AddPartyView implements ActionListener, ListSelectionListener {
 		colPanel.add(buttonPanel);
 
 		win.getContentPane().add("Center", colPanel);
-
-		win.pack();
-
-		// Center Window on Screen
-		Dimension screenSize = (Toolkit.getDefaultToolkit()).getScreenSize();
-		win.setLocation(
-				((screenSize.width) / 2) - ((win.getSize().width) / 2),
-				((screenSize.height) / 2) - ((win.getSize().height) / 2));
-		win.setVisible(true);
-
+		win = Views.CenterWindow(win);
 	}
 
 	public void actionPerformed(ActionEvent e) {

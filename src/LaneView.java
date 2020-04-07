@@ -11,7 +11,7 @@ import java.util.*;
 public class LaneView implements LaneObserver, ActionListener {
 
 	private int roll;
-	private boolean initDone = true;
+	private boolean initDone;
 
 	JFrame frame;
 	Container cpanel;
@@ -143,7 +143,7 @@ public class LaneView implements LaneObserver, ActionListener {
 
 				Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-				new Button("Maintenance Call",buttonPanel,this);
+				Views.Button("Maintenance Call",buttonPanel).addActionListener(this);
 				cpanel.add(buttonPanel, "South");
 
 				frame.pack();

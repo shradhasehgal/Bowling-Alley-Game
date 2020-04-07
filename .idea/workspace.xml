@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2f22fe7-8fcc-4c9e-8740-0e3dd8346c3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Views.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCOREHISTORY.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/SCOREHISTORY.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/AddPartyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/AddPartyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ControlDeskView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ControlDeskView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/EndGamePrompt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/EndGamePrompt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Lane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/NewPatronView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/NewPatronView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddPartyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddPartyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControlDeskView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDeskView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EndGamePrompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EndGamePrompt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EndGameReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EndGameReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneStatusView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneStatusView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewPatronView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewPatronView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,34 +87,38 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="710" y="436" width="488" height="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.1053@67.27.1853.1053" timestamp="1585134534206" />
-    <state width="1807" height="275" key="GridCell.Tab.0.bottom" timestamp="1586270365120">
+    <state width="1807" height="275" key="GridCell.Tab.0.bottom" timestamp="1586279486058">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="275" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586270365120" />
-    <state width="1807" height="275" key="GridCell.Tab.0.center" timestamp="1586270365119">
+    <state width="1807" height="275" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586279486058" />
+    <state width="1807" height="275" key="GridCell.Tab.0.center" timestamp="1586279486056">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="275" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586270365119" />
-    <state width="1807" height="275" key="GridCell.Tab.0.left" timestamp="1586270365119">
+    <state width="1807" height="275" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586279486056" />
+    <state width="1807" height="275" key="GridCell.Tab.0.left" timestamp="1586279486055">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="275" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586270365119" />
-    <state width="1807" height="275" key="GridCell.Tab.0.right" timestamp="1586270365119">
+    <state width="1807" height="275" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586279486055" />
+    <state width="1807" height="275" key="GridCell.Tab.0.right" timestamp="1586279486057">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="275" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586270365119" />
+    <state width="1807" height="275" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586279486057" />
     <state x="482" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1585758790271">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="188" width="1022" height="737" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585758790271" />
-    <state x="773" y="422" width="430" height="269" key="com.codemr.intellij.extractors.ExtractModelDialog" timestamp="1586270577472">
+    <state x="773" y="422" width="430" height="269" key="com.codemr.intellij.extractors.ExtractModelDialog" timestamp="1586280631612">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="773" y="422" width="430" height="269" key="com.codemr.intellij.extractors.ExtractModelDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586270577472" />
+    <state x="773" y="422" width="430" height="269" key="com.codemr.intellij.extractors.ExtractModelDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586280631612" />
     <state x="181" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586236509905">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="181" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586236509905" />
+    <state x="1558" y="566" width="596" height="706" key="dock-window-2" timestamp="1586279932022">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1558" y="566" width="596" height="706" key="dock-window-2/67.27.1853.1053@67.27.1853.1053" timestamp="1586279932022" />
     <state x="302" y="154" width="1372" height="805" key="new project wizard" timestamp="1586236974143">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

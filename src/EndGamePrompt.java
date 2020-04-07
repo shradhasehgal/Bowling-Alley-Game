@@ -48,8 +48,8 @@ public class EndGamePrompt implements ActionListener {
 
 		Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-		new Button("Yes",buttonPanel, this);
-		new Button("No",buttonPanel, this);
+		Views.Button("Yes",buttonPanel).addActionListener(this);
+		Views.Button("No",buttonPanel).addActionListener(this);
 
 		// Clean up main panel
 		colPanel.add(labelPanel);

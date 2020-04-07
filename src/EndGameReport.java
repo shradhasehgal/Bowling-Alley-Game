@@ -64,8 +64,8 @@ public class EndGameReport implements ActionListener, ListSelectionListener {
 
 		Insets buttonMargin = new Insets(4, 4, 4, 4);
 
-		new Button("Print Report", buttonPanel,this);
-		new Button("Finished", buttonPanel,this);
+		Views.Button("Print Report", buttonPanel).addActionListener(this);
+		Views.Button("Finished", buttonPanel).addActionListener(this);
 
 		// Clean up main panel
 		colPanel.add(partyPanel);

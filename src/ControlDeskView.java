@@ -42,9 +42,7 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 		this.maxMembers = maxMembers;
 		int numLanes = controlDesk.getNumLanes();
 
-		win = new JFrame("Control Desk");
-		win.getContentPane().setLayout(new BorderLayout());
-		((JPanel) win.getContentPane()).setOpaque(false);
+		win = Views.InitializeWindow("Control Desk");
 
 		JPanel colPanel = new JPanel();
 		colPanel.setLayout(new BorderLayout());
@@ -56,7 +54,7 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 
 		String[] ButtonNames = {"Add Party", "Finished"};
 		for (int i=0; i < ButtonNames.length; i++)
-			new Button(ButtonNames[i], controlsPanel, this);
+			Views.Button(ButtonNames[i], controlsPanel).addActionListener(this);
 		// Lane Status Panel
 		JPanel laneStatusPanel = new JPanel();
 		laneStatusPanel.setLayout(new GridLayout(numLanes, 1));
@@ -98,7 +96,7 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 
 		win.getContentPane().add("Center", colPanel);
 
-		win.pack();
+		win = Views.CenterWindow(win);
 
 		/* Close program when this window closes */
 		win.addWindowListener(new WindowAdapter() {
@@ -106,14 +104,6 @@ public class ControlDeskView implements ActionListener, ControlDeskObserver {
 				System.exit(0);
 			}
 		});
-
-		// Center Window on Screen
-		Dimension screenSize = (Toolkit.getDefaultToolkit()).getScreenSize();
-		win.setLocation(
-			((screenSize.width) / 2) - ((win.getSize().width) / 2),
-			((screenSize.height) / 2) - ((win.getSize().height) / 2));
-		win.show();
-
 	}
 
 	/**
