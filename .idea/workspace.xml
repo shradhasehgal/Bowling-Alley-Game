@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2f22fe7-8fcc-4c9e-8740-0e3dd8346c3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SuperLane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCOREHISTORY.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/SCOREHISTORY.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Lane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.project" beforeDir="false" afterPath="$PROJECT_DIR$/src/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScoreReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +78,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="801" y="266" width="374" height="582" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1586289111421" />
+    <state x="637" y="49" width="702" height="1007" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586367506757">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="637" y="49" width="702" height="1007" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586367506757" />
     <state x="710" y="436" width="488" height="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585134534206">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
