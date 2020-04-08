@@ -19,16 +19,15 @@ public class EndGameReport implements ActionListener, ListSelectionListener {
 
 	private JFrame win;
 	private JList memberList;
-	private Vector myVector;
 	private Vector retVal;
 
-	private int result;
+	private boolean result;
 
 	private String selectedMember;
 
 	public EndGameReport( String partyName, Party party ) {
 	
-		result =0;
+		result = false;
 		retVal = new Vector();
 		win = new JFrame("End Game Report for " + partyName + "?" );
 		win.getContentPane().setLayout(new BorderLayout());
@@ -52,12 +51,10 @@ public class EndGameReport implements ActionListener, ListSelectionListener {
 		memberList.setVisibleRowCount(5);
 		memberList.addListSelectionListener(this);
 		JScrollPane partyPane = new JScrollPane(memberList);
-		//        partyPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		partyPanel.add(partyPane);
 
 		partyPanel.add( memberList );
 
-		// Button Panel
 		// Button Panel
 		JPanel buttonPanel = new JPanel();
 		buttonPanel.setLayout(new GridLayout(2, 1));
@@ -90,8 +87,8 @@ public class EndGameReport implements ActionListener, ListSelectionListener {
 			retVal.add(selectedMember);
 		}
 		else if (e.getActionCommand().equals("Finished")){
-			win.hide();
-			result = 1;
+			win.setVisible(false);
+			result = true;
 		}
 
 	}
@@ -102,7 +99,7 @@ public class EndGameReport implements ActionListener, ListSelectionListener {
 	}
 
 	public Vector getResult() {
-		while ( result == 0 ) {
+		while (!result) {
 			try {
 				Thread.sleep(10);
 			} catch ( InterruptedException e ) {
@@ -110,20 +107,6 @@ public class EndGameReport implements ActionListener, ListSelectionListener {
 			}
 		}
 		return retVal;	
-	}
-	
-	public void destroy() {
-		win.hide();
-	}
-
-	public static void main( String args[] ) {
-		Vector bowlers = new Vector();
-		for ( int i=0; i<4; i++ ) {
-			bowlers.add( new Bowler( "aaaaa", "aaaaa", "aaaaa" ) );
-		}
-		Party party = new Party( bowlers );
-		String partyName="wank";
-		EndGameReport e = new EndGameReport( partyName, party );
 	}
 	
 }
