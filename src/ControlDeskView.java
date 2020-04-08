@@ -44,7 +44,7 @@ public class ControlDeskView implements ActionListener {
 		colPanel.setLayout(new BorderLayout());
 
 		ControlDeskViewParty Party = new ControlDeskViewParty();
-		controlDesk.subscribe(Party);
+		controlDesk.subscribers.subscribe(Party);
 
 		colPanel.add(new ControlDeskViewControl(this).getControlPanel(), "East");
 		colPanel.add(new ControlDeskViewLane(controlDesk).getLaneStatusPanel(), "Center");

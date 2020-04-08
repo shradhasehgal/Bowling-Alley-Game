@@ -10,19 +10,14 @@ import java.util.*;
 
 public class LaneView implements LaneObserver, ActionListener {
 
-	private int roll;
 	private boolean initDone;
 
 	JFrame frame;
 	Container cpanel;
 	Vector bowlers;
 
-	JPanel[][] balls;
 	JLabel[][] ballLabel;
-	JPanel[][] scores;
 	JLabel[][] scoreLabel;
-	JPanel[][] ballGrid;
-	JPanel[] pins;
 
 	Lane lane;
 
@@ -54,6 +49,12 @@ public class LaneView implements LaneObserver, ActionListener {
 	}
 
 	private JPanel makeFrame(Party party) {
+
+		JPanel[][] balls;
+		JPanel[][] scores;
+		JPanel[][] ballGrid;
+		JPanel[] pins;
+
 
 		initDone = false;
 		bowlers = party.getMembers();
@@ -123,7 +124,6 @@ public class LaneView implements LaneObserver, ActionListener {
 		if (lane.isPartyAssigned()) {
 			int numBowlers = le.getParty().getMembers().size();
 			while (!initDone) {
-				//System.out.println("chillin' here.");
 				try {
 					Thread.sleep(1);
 				} catch (Exception e) {
@@ -140,8 +140,6 @@ public class LaneView implements LaneObserver, ActionListener {
 				// Button Panel
 				JPanel buttonPanel = new JPanel();
 				buttonPanel.setLayout(new FlowLayout());
-
-				Insets buttonMargin = new Insets(4, 4, 4, 4);
 
 				Views.Button("Maintenance Call",buttonPanel).addActionListener(this);
 				cpanel.add(buttonPanel, "South");

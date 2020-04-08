@@ -136,7 +136,7 @@ import java.util.Iterator;
 import java.util.HashMap;
 import java.util.Date;
 
-public class Lane extends Thread implements PinsetterObserver {	
+public class Lane extends Thread implements PinsetterObserver {
 	private Party party;
 	private Pinsetter setter;
 	private HashMap scores;
@@ -152,7 +152,6 @@ public class Lane extends Thread implements PinsetterObserver {
 	private int frameNumber;
 	private boolean tenthFrameStrike;
 
-	private int[] curScores;
 	private int[][] cumulScores;
 	private boolean canThrowAgain;
 	
@@ -168,7 +167,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 * @pre none
 	 * @post a new lane has been created and its thered is executing
 	 */
-	public Lane() { 
+	public Lane() {
 		setter = new Pinsetter();
 		scores = new HashMap();
 		subscribers = new Vector();
@@ -311,11 +310,11 @@ public class Lane extends Thread implements PinsetterObserver {
 				}
 			}
 	}
-	
+
 	/** resetBowlerIterator()
-	 * 
+	 *
 	 * sets the current bower iterator back to the first bowler
-	 * 
+	 *
 	 * @pre the party as been assigned
 	 * @post the iterator points to the first bowler in the party
 	 */
@@ -324,9 +323,9 @@ public class Lane extends Thread implements PinsetterObserver {
 	}
 
 	/** resetScores()
-	 * 
+	 *
 	 * resets the scoring mechanism, must be called before scoring starts
-	 * 
+	 *
 	 * @pre the party has been assigned
 	 * @post scoring system is initialized
 	 */
@@ -343,10 +342,11 @@ public class Lane extends Thread implements PinsetterObserver {
 
 
 
+
 		gameFinished = false;
 		frameNumber = 0;
 	}
-		
+
 	/** assignParty()
 	 * 
 	 * assigns a party to this lane
@@ -361,7 +361,6 @@ public class Lane extends Thread implements PinsetterObserver {
 		resetBowlerIterator();
 		partyAssigned = true;
 		
-		curScores = new int[party.getMembers().size()];
 		cumulScores = new int[party.getMembers().size()][10];
 		finalScores = new int[party.getMembers().size()][128]; //Hardcoding a max of 128 games, bite me.
 		gameNumber = 0;
@@ -398,7 +397,7 @@ public class Lane extends Thread implements PinsetterObserver {
 	 * @return		The new lane event
 	 */
 	private LaneEvent lanePublish(  ) {
-		LaneEvent laneEvent = new LaneEvent(party, bowlIndex, currentThrower, cumulScores, scores, frameNumber+1, curScores, ball, gameIsHalted);
+		LaneEvent laneEvent = new LaneEvent(party, bowlIndex, currentThrower, cumulScores, scores, frameNumber+1, ball, gameIsHalted);
 		return laneEvent;
 	}
 

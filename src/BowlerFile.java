@@ -27,14 +27,28 @@ class BowlerFile {
 	/** The location of the bowelr database */
 	private static String BOWLER_DAT = "BOWLERS.DAT";
 
-    /**
-     * Retrieves bowler information from the database and returns a Bowler objects with populated fields.
-     *
-     * @param nickName	the nickName of the bolwer to retrieve
-     *
-     * @return a Bowler object
-     * 
-     */
+	public static Bowler registerPatron(String nickName) {
+		Bowler patron = null;
+
+		try {
+			patron = BowlerFile.getBowlerInfo(nickName);
+		} catch (FileNotFoundException e) {
+			System.err.println("Error..." + e);
+		} catch (IOException e) {
+			System.err.println("Error..." + e);
+		}
+
+		return patron;
+	}
+
+	/**
+	 * Retrieves bowler information from the database and returns a Bowler objects with populated fields.
+	 *
+	 * @param nickName	the nickName of the bolwer to retrieve
+	 *
+	 * @return a Bowler object
+	 *
+	 */
 
 	public static Bowler getBowlerInfo(String nickName)
 		throws IOException, FileNotFoundException {
