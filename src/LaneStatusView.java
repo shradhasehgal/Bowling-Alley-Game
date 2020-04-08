@@ -15,7 +15,7 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 	private JPanel jp;
 
 	private JLabel curBowler, pinsDown;
-	private JButton viewLane, viewPinSetter, maintenance;
+	private JButton viewLane, viewPinSetter, maintenance, pause;
 
 	private PinSetterView psv;
 	private LaneView lv;
@@ -61,6 +61,8 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 		maintenance = Views.Button("     ", buttonPanel);
 		maintenance.addActionListener(this);
 		maintenance.setBackground( Color.GREEN );
+		pause = Views.Button("Pause", buttonPanel);
+		pause.addActionListener(this);
 		viewLane.setEnabled( false );
 		viewPinSetter.setEnabled( false );
 
@@ -105,6 +107,13 @@ public class LaneStatusView implements ActionListener, LaneObserver, PinsetterOb
 				lane.unPauseGame();
 				maintenance.setBackground( Color.GREEN );
 			}
+		}
+
+		if (e.getSource().equals(pause)) {
+			if ( lane.isPartyAssigned() ) {
+				lane.pauseGame();
+			}
+
 		}
 	}
 

@@ -116,6 +116,9 @@ public class SuperLane extends Thread {
         publish(lanePublish());
     }
 
+    public boolean isGameHalted() {
+        return gameIsHalted;
+    }
     /**
      * Resume the execution of this game
      */

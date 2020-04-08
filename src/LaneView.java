@@ -198,6 +198,7 @@ public class LaneView implements LaneObserver, ActionListener {
 		if (e.getActionCommand().equals("Maintenance Call")) {
 			lane.pauseGame();
 		}
+
 	}
 
 }
