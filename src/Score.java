@@ -13,21 +13,21 @@ public class Score {
     private String score;
 
     public Score( String nick, String date, String score ) {
-		this.nick=nick;
-		this.date=date;
-		this.score=score;
+        this.nick=nick;
+        this.date=date;
+        this.score=score;
     }
 
-	public String getDate() {
-		return date;
-	}
-	
-	public String getScore() {
-		return score;
-	}
+    public String getDate() {
+        return date;
+    }
 
-	public String toString() {
-		return nick + "\t" + date + "\t" + score;
-	}
+    public String getScore() {
+        return score;
+    }
+
+    public String toString() {
+        return nick + "\t" + date + "\t" + score;
+    }
 
 }

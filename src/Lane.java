@@ -349,7 +349,7 @@ public class Lane extends SuperLane implements PinsetterObserver {
 
 		curScore[ index - 1] = score;
 		scores.put(Cur, curScore);
-		getScore( Cur, frame );
+		cumulScores[bowlIndex] = new getScore(curScore, index).getScores();
 		publish( lanePublish() );
 	}
 

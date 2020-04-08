@@ -19,7 +19,7 @@ public class EndGamePrompt implements ActionListener {
 
 	private JFrame win;
 	private int result;
-	
+
 	public EndGamePrompt( String partyName ) {
 
 		result =0;
