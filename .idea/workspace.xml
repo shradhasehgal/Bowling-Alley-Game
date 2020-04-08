@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2f22fe7-8fcc-4c9e-8740-0e3dd8346c3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LaneViewBallLabel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCOREHISTORY.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/SCOREHISTORY.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Lane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/LaneView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/LaneView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LaneView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LaneView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EndGamePrompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EndGamePrompt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
