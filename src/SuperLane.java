@@ -4,36 +4,23 @@ import java.util.Vector;
 
 public class SuperLane extends Thread {
     protected Party party;
-    protected Pinsetter setter;
     protected HashMap scores;
     protected Vector subscribers;
     protected boolean gameIsHalted;
     protected boolean partyAssigned;
     protected boolean gameFinished;
-    protected Iterator bowlerIterator;
     protected int ball;
     protected int bowlIndex;
     protected int frameNumber;
+    protected boolean tenthFrameStrike;
     protected int[][] cumulScores;
     protected Bowler currentThrower;			// = the thrower who just took a throw
 
     public SuperLane() {
-        setter = new Pinsetter();
         scores = new HashMap();
         subscribers = new Vector();
         gameIsHalted = false;
         partyAssigned = false;
-    }
-
-    /** resetBowlerIterator()
-     *
-     * sets the current bower iterator back to the first bowler
-     *
-     * @pre the party as been assigned
-     * @post the iterator points to the first bowler in the party
-     */
-    protected void resetBowlerIterator() {
-        bowlerIterator = (party.getMembers()).iterator();
     }
 
     /** resetScores()
@@ -61,28 +48,6 @@ public class SuperLane extends Thread {
         frameNumber = 0;
     }
 
-    /** markScore()
-     *
-     * Method that marks a bowlers score on the board.
-     *
-     * @param Cur		The current bowler
-     * @param frame	The frame that bowler is on
-     * @param ball		The ball the bowler is on
-     * @param score	The bowler's score
-     */
-    protected void markScore(Bowler Cur, int frame, int ball, int score){
-        int[] curScore;
-        int index =  ( (frame - 1) * 2 + ball);
-
-        curScore = (int[]) scores.get(Cur);
-
-
-        curScore[ index - 1] = score;
-        scores.put(Cur, curScore);
-        getScore( Cur, frame );
-        publish( lanePublish() );
-    }
-
     /** lanePublish()
      *
      * Method that creates and returns a newly created laneEvent
@@ -103,7 +68,7 @@ public class SuperLane extends Thread {
      *
      * @return			The bowlers total score
      */
-    private int getScore( Bowler Cur, int frame) {
+    protected int getScore(Bowler Cur, int frame) {
         int[] curScore;
         int strikeballs = 0;
         int totalScore = 0;
@@ -253,16 +218,6 @@ public class SuperLane extends Thread {
                 ( (LaneObserver) eventIterator.next()).receiveLaneEvent( event );
             }
         }
-    }
-
-    /**
-     * Accessor to get this Lane's pinsetter
-     *
-     * @return		A reference to this lane's pinsetter
-     */
-
-    public Pinsetter getPinsetter() {
-        return setter;
     }
 
     /**

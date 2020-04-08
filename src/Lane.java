@@ -137,8 +137,9 @@ import java.util.HashMap;
 import java.util.Date;
 
 public class Lane extends SuperLane implements PinsetterObserver {
+	private Pinsetter setter;
 
-	private boolean tenthFrameStrike;
+	private Iterator bowlerIterator;
 
 	private boolean canThrowAgain;
 	
@@ -154,6 +155,7 @@ public class Lane extends SuperLane implements PinsetterObserver {
 	 */
 	public Lane() {
 		super();
+		setter = new Pinsetter();
 		gameNumber = 0;
 		setter.subscribe( this );
 		this.start();
@@ -292,6 +294,17 @@ public class Lane extends SuperLane implements PinsetterObserver {
 			}
 	}
 
+	/** resetBowlerIterator()
+	 *
+	 * sets the current bower iterator back to the first bowler
+	 *
+	 * @pre the party as been assigned
+	 * @post the iterator points to the first bowler in the party
+	 */
+	private void resetBowlerIterator() {
+		bowlerIterator = (party.getMembers()).iterator();
+	}
+
 	/** assignParty()
 	 * 
 	 * assigns a party to this lane
@@ -313,5 +326,37 @@ public class Lane extends SuperLane implements PinsetterObserver {
 		resetScores();
 	}
 
+	/** markScore()
+	 *
+	 * Method that marks a bowlers score on the board.
+	 *
+	 * @param Cur		The current bowler
+	 * @param frame	The frame that bowler is on
+	 * @param ball		The ball the bowler is on
+	 * @param score	The bowler's score
+	 */
+	private void markScore( Bowler Cur, int frame, int ball, int score ){
+		int[] curScore;
+		int index =  ( (frame - 1) * 2 + ball);
+
+		curScore = (int[]) scores.get(Cur);
+
+
+		curScore[ index - 1] = score;
+		scores.put(Cur, curScore);
+		getScore( Cur, frame );
+		publish( lanePublish() );
+	}
+
+
+	/**
+	 * Accessor to get this Lane's pinsetter
+	 *
+	 * @return		A reference to this lane's pinsetter
+	 */
+
+	public Pinsetter getPinsetter() {
+		return setter;
+	}
 
 }
