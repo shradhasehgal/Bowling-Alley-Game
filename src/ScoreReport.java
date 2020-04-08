@@ -9,7 +9,6 @@ import java.io.*;
 import java.util.Vector;
 import java.util.Iterator;
 import java.net.*;
-import java.awt.*;
 import java.awt.print.*;
 
 public class ScoreReport {
@@ -26,27 +25,20 @@ public class ScoreReport {
 		
 		Iterator scoreIt = v.iterator();
 		
-		content = "";
-		content += "--Lucky Strike Bowling Alley Score Report--\n";
-		content += "\n";
-		content += "Report for " + full + ", aka \"" + nick + "\":\n";
-		content += "\n";
+		content = "--Lucky Strike Bowling Alley Score Report--\n\n";
+		content += "Report for " + full + ", aka \"" + nick + "\":\n\n";
 		content += "Final scores for this session: ";
 		content += scores[0];
 		for (int i = 1; i < games; i++){
 			content += ", " + scores[i];
 		}
-		content += ".\n";
-		content += "\n";
-		content += "\n";
-		content += "Previous scores by date: \n";
+		content += ".\n\n\nPrevious scores by date: \n";
+
 		while (scoreIt.hasNext()){
 			Score score = (Score) scoreIt.next();
-			content += "  " + score.getDate() + " - " +  score.getScore();
-			content += "\n";
+			content += "  " + score.getDate() + " - " +  score.getScore() + "\n";
 		}
-		content += "\n\n";
-		content += "Thank you for your continuing patronage.";
+		content += "\n\nThank you for your continuing patronage.";
 
 	}
 
@@ -103,9 +95,7 @@ public class ScoreReport {
 		try {
 			out.write(s + "\r\n");
 			out.flush();
-			// System.out.println(s);
 			s = in.readLine();
-			// System.out.println(s);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
