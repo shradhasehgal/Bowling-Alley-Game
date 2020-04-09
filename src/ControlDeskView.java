@@ -116,9 +116,8 @@ public class ControlDeskView implements ActionListener {
 
 
 	public void WriteGamesToFile() {
-		CreateFile();
 		try {
-			FileWriter myWriter = new FileWriter("games.txt");
+			FileWriter myWriter = new FileWriter("games.txt", true);
 
 			var lanes = controlDesk.getLanes();
 			var it = lanes.iterator();

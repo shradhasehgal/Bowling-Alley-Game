@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2f22fe7-8fcc-4c9e-8740-0e3dd8346c3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/OldGameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCOREHISTORY.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/SCOREHISTORY.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games.txt" beforeDir="false" afterPath="$PROJECT_DIR$/games.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/ControlDeskView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ControlDeskView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A3/ControlDeskViewControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ControlDeskViewControl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Lane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/OldGameView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/OldGameView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddPartyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddPartyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bowler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bowler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BowlerFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/BowlerFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControlDesk.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDesk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControlDeskView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDeskView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControlDeskView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDeskView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ControlDeskView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDeskView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControlDeskViewControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDeskViewControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EndGameReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/EndGameReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneStatusView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneStatusView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OldGameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OldGameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PinSetterView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/PinSetterView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScoreReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScoreReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperLane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperLane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drive.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/drive.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,22 +114,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="710" y="436" width="488" height="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.1053@67.27.1853.1053" timestamp="1585134534206" />
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1586432288725">
+    <state width="1807" height="277" key="GridCell.Tab.0.bottom" timestamp="1586437853137">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586432288725" />
-    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1586432288725">
+    <state width="1807" height="277" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586437853137" />
+    <state width="1807" height="277" key="GridCell.Tab.0.center" timestamp="1586437853137">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586432288725" />
-    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1586432288725">
+    <state width="1807" height="277" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586437853137" />
+    <state width="1807" height="277" key="GridCell.Tab.0.left" timestamp="1586437853136">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586432288725" />
-    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1586432288725">
+    <state width="1807" height="277" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586437853136" />
+    <state width="1807" height="277" key="GridCell.Tab.0.right" timestamp="1586437853137">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586432288725" />
+    <state width="1807" height="277" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586437853137" />
     <state x="482" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1585758790271">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

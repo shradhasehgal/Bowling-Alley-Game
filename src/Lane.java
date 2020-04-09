@@ -368,7 +368,7 @@ public class Lane extends SuperLane implements PinsetterObserver {
 
 	public String getGameDetails(){
 		Date date = new Date();
-		String store = String.format("%d:%d %d/%d/%d\n", date.getHours(), date.getMinutes(), date.getMonth(), date.getDay(), date.getYear() + 1900);
+		String store = String.format("%d:%d,%d/%d/%d ", date.getHours(), date.getMinutes(), date.getMonth(), date.getDay(), date.getYear() + 1900);
 
 		Vector save_party = party.getMembers();
 
