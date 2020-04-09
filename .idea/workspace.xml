@@ -4,13 +4,27 @@
     <list default="true" id="b2f22fe7-8fcc-4c9e-8740-0e3dd8346c3c" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/SuperLaneEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SCOREHISTORY.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/SCOREHISTORY.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ControlDeskView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ControlDeskView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/ControlDeskView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/ControlDeskView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/Lane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/LaneStatusView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/LaneStatusView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/LaneView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/LaneView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3/PinSetterView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/PinSetterView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/A3/SuperLane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3/SuperLane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bowler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bowler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControlDesk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDesk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControlDeskView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlDeskView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LaneEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneStatusView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneStatusView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LaneStatusView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneStatusView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LaneView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PinSetterView.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/PinSetterView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PinSetterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PinSetterView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperLane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperLane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SuperLane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperLane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +49,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -81,6 +96,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="215" width="800" height="684" key="#Inspections/67.27.1853.1053@67.27.1853.1053" timestamp="1586105885408" />
+    <state x="696" y="354" width="585" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586419013109">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="696" y="354" width="585" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1586419013109" />
     <state x="801" y="266" width="374" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1586289111421">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -93,30 +112,30 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="710" y="436" width="488" height="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.1053@67.27.1853.1053" timestamp="1585134534206" />
-    <state width="1807" height="277" key="GridCell.Tab.0.bottom" timestamp="1586388201983">
+    <state width="1807" height="277" key="GridCell.Tab.0.bottom" timestamp="1586421335140">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="277" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586388201983" />
-    <state width="1807" height="277" key="GridCell.Tab.0.center" timestamp="1586388201983">
+    <state width="1807" height="277" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586421335140" />
+    <state width="1807" height="277" key="GridCell.Tab.0.center" timestamp="1586421335140">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="277" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586388201983" />
-    <state width="1807" height="277" key="GridCell.Tab.0.left" timestamp="1586388201983">
+    <state width="1807" height="277" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586421335140" />
+    <state width="1807" height="277" key="GridCell.Tab.0.left" timestamp="1586421335140">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="277" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586388201983" />
-    <state width="1807" height="277" key="GridCell.Tab.0.right" timestamp="1586388201983">
+    <state width="1807" height="277" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586421335140" />
+    <state width="1807" height="277" key="GridCell.Tab.0.right" timestamp="1586421335140">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="277" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586388201983" />
+    <state width="1807" height="277" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586421335140" />
     <state x="482" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1585758790271">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="188" width="1022" height="737" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585758790271" />
-    <state x="773" y="422" width="430" height="294" key="com.codemr.intellij.extractors.ExtractModelDialog" timestamp="1586386641302">
+    <state x="773" y="422" width="430" height="294" key="com.codemr.intellij.extractors.ExtractModelDialog" timestamp="1586407821260">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="773" y="422" width="430" height="294" key="com.codemr.intellij.extractors.ExtractModelDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586386641302" />
+    <state x="773" y="422" width="430" height="294" key="com.codemr.intellij.extractors.ExtractModelDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586407821260" />
     <state x="181" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586236509905">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -129,6 +148,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1558" y="566" width="596" height="706" key="dock-window-2/67.27.1853.1053@67.27.1853.1053" timestamp="1586279932022" />
+    <state x="726" y="313" width="554" height="500" key="extract.method.dialog" timestamp="1586419894541">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="313" width="554" height="500" key="extract.method.dialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586419894541" />
     <state x="302" y="154" width="1372" height="805" key="new project wizard" timestamp="1586236974143">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

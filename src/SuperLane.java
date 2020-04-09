@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Vector;
 
@@ -125,5 +126,9 @@ public class SuperLane extends Thread {
     public void unPauseGame() {
         gameIsHalted = false;
         publish(lanePublish());
+    }
+
+    public HashMap getScores(){
+        return scores;
     }
 }

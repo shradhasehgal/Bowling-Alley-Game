@@ -134,6 +134,8 @@
 import java.util.Vector;
 import java.util.Iterator;
 import java.util.HashMap;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.util.Date;
 
 public class Lane extends SuperLane implements PinsetterObserver {
@@ -363,5 +365,35 @@ public class Lane extends SuperLane implements PinsetterObserver {
 	public Pinsetter getPinsetter() {
 		return setter;
 	}
+
+	public String getGameDetails(){
+		Date date = new Date();
+		String store = String.format("%d:%d %d/%d/%d ", date.getHours(), date.getMinutes(), date.getMonth(), date.getDay(), date.getYear() + 1900);
+		String playerNames ="";
+
+		Vector save_party = party.getMembers();
+
+		int no_players = party.getMembers().size();
+
+
+		for(int i=0; i < no_players; i++){
+			store += ((Bowler) save_party.get(i)).getNickName()+": ";
+			int[] save_scores = (int[]) scores.get(save_party.get(i));
+			for(int j=0; j<= frameNumber; j+=2)
+			{
+				store += save_scores[j] + " " + save_scores[j + 1] + " ";
+			}
+
+			store += "\t";
+		}
+
+		store += playerNames;
+		store +="\n"+frameNumber+"\n" + bowlIndex + "\n";
+
+
+		return store;
+	}
+
+
 
 }

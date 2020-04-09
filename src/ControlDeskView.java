@@ -15,8 +15,12 @@
 
 import java.awt.*;
 import java.awt.event.*;
+import java.io.*;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Vector;
 import javax.swing.*;
+
 
 public class ControlDeskView implements ActionListener {
 
@@ -59,6 +63,7 @@ public class ControlDeskView implements ActionListener {
 		/* Close program when this window closes */
 		win.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
+				WriteGamesToFile();
 				System.exit(0);
 			}
 		});
@@ -94,5 +99,43 @@ public class ControlDeskView implements ActionListener {
 	public void updateAddParty(AddPartyView addPartyView) {
 		controlDesk.addPartyQueue(addPartyView.getParty());
 	}
+
+	public void CreateFile() {
+		try {
+			File myObj = new File("games.txt");
+				myObj.createNewFile();
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+	}
+
+
+
+	public void WriteGamesToFile() {
+		CreateFile();
+		try {
+			FileWriter myWriter = new FileWriter("games.txt");
+
+			var lanes = controlDesk.getLanes();
+			var it = lanes.iterator();
+			String store = "";
+
+			while (it.hasNext()) {
+				Lane curLane = (Lane) it.next();
+
+				if (curLane.isPartyAssigned() && curLane.isGameHalted()) {
+					myWriter.write(curLane.getGameDetails());
+				}
+			}
+
+			myWriter.close();
+		} catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+	}
+
+
 
 }

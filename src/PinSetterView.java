@@ -205,15 +205,14 @@ public class PinSetterView implements PinsetterObserver {
 		secondRoll.setBackground( Color.black);
 	}
     }
-    
-    public void show() {
-    	frame.setVisible(true);
-    }
 
-    public void hide() {
-    	frame.setVisible(false);
-    }
-    
+
+	public void toggle(boolean cur) {
+
+		if(cur) frame.setVisible(false);
+		else frame.setVisible(true);
+	}
+
     public static void main ( String args [ ] ) {
 		PinSetterView pg = new PinSetterView ( 1 );
     }
