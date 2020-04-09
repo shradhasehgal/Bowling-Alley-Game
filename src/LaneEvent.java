@@ -25,14 +25,10 @@
 
 import java.util.HashMap;
 
-public class LaneEvent {
+public class LaneEvent extends SuperLaneEvent {
 
 	public boolean mechProb;
 
-	public int frame;
-	public int ball;
-	public int index;
-	public int frameNum;
 	public int[][] cumulScore;
 
 	private Party p;
@@ -41,40 +37,22 @@ public class LaneEvent {
 
 
 	public LaneEvent( Party pty, int theIndex, Bowler theBowler, int[][] theCumulScore, HashMap theScore, int theFrameNum, int theBall, boolean mechProblem) {
+		super(theBall, theIndex, theFrameNum);
 		p = pty;
-		index = theIndex;
 		bowler = theBowler;
 		cumulScore = theCumulScore;
 		score = theScore;
-		frameNum = theFrameNum;
-		ball = theBall;	
 		mechProb = mechProblem;
 	}
 	
 	public boolean isMechanicalProblem() {
 		return mechProb;
 	}
-	
-	public int getFrameNum() {
-		return frameNum;
-	}
-	
+
 	public HashMap getScore( ) {
 		return score;
 	}
 
-	public int getIndex() {
-		return index;
-	}
-
-	public int getFrame( ) {
-		return frame;
-	}
-
-	public int getBall( ) {
-		return ball;
-	}
-	
 	public int[][] getCumulScore(){
 		return cumulScore;
 	}
