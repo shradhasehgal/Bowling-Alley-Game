@@ -12,6 +12,7 @@ public class ControlDeskViewControl <T extends ActionListener>{
         controlPanel.setLayout(new GridLayout(3, 1));
         controlPanel.setBorder(new TitledBorder("Controls"));
         Views.Button("Add Party", controlPanel).addActionListener(MasterClass);
+        Views.Button("Ad-Hoc Queries", controlPanel).addActionListener(MasterClass);
         Views.Button("Finished", controlPanel).addActionListener(MasterClass);
     }
 

@@ -75,6 +75,9 @@ public class ControlDeskView implements ActionListener {
 		if (e.getActionCommand().equals("Add Party")) {
 			AddPartyView addPartyWin = new AddPartyView(this, maxMembers);
 		}
+		else if (e.getActionCommand().equals("Ad-Hoc Queries")) {
+			QueryView QueriesWin = new QueryView();
+		}
 		else if (e.getActionCommand().equals("Finished")) {
 			win.setVisible(false);
 			System.exit(0);
