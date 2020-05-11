@@ -103,17 +103,6 @@ public class ControlDeskView implements ActionListener {
 		controlDesk.addPartyQueue(addPartyView.getParty());
 	}
 
-	public void CreateFile() {
-		try {
-			File myObj = new File("games.txt");
-				myObj.createNewFile();
-		} catch (IOException e) {
-			System.out.println("An error occurred.");
-			e.printStackTrace();
-		}
-	}
-
-
 
 	public void WriteGamesToFile() {
 		try {
